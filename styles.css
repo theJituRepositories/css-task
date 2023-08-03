@@ -55,28 +55,26 @@ color: #7f7f7f;
 }
 
 .score {
-  margin-left: 32%;
+  margin-left: 28%;
   width: 150px;
   height: 150px;
   margin-top: 20%;
   /* Linear gradient from hsla(241, 72%, 46%, 0) to hsla(256, 72%, 46%, 1) from top to bottom */
-  background: hsl(224, 85%, 40%);
+  background: hsla(224, 85%, 40%,0.5);
   border-radius: 50%;
 }
 
 
 .card-commendation p {
   text-align: center;
-  margin-top: 3px;
-  font-size: 18px;
-  color: #7f7f7f;
-  font-weight: 500;
+  font-size: 15px;
+  color: #d0d0d0;
+  font-weight: 300;
 }
 
 #data-container {
   margin-left: 28%;
   margin-top: -40%;
-  background-color: white;
   width: 300px;
   height: 300px;
   position: absolute;
@@ -89,7 +87,7 @@ color: #7f7f7f;
 }
 
 #data-container h3 {
-  margin-top: -2px;
+  margin-top: -5px;
   margin-bottom: 15px;
   margin-left: 10%;
   font-size: 20px;
@@ -101,7 +99,6 @@ color: #7f7f7f;
   margin-left: 70%;
   font-weight: bold;
   margin-top: -30px;
-  color: hsl(256, 85%, 13%);
 }
 
 /* Target the <h2> element with class "summary-heading" */
@@ -114,12 +111,12 @@ color: #7f7f7f;
 }
 
 .btn-primary {
-  margin-top: 2%;
+  margin-top: 6%;
   margin-left: 3%;
   width: 250px;
   height: 40px;
-  background-color: hsl(256, 85%, 13%);
-  border-radius: 10px;
+  background-color: hsl(256, 90%, 8%);
+  border-radius:30px;
   border: none;
   color: white;
   font-size: 20px;
@@ -141,14 +138,34 @@ color: #7f7f7f;
   width: 200px;
   height: 20px;
 }
+.card__content p{
+color: linear-gradient(to right, hsl(256, 85%, 13%), hsl(256, 20%, 78%));
+
+}
 
 /* Media queries for smaller screen sizes */
-@media (max-width: 1200px) {
+/* Other styles... */
+
+/* Media queries for smaller screen sizes */
+@media (max-width: 500px) {
   .result-container {
-    width: 90%;
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    margin:auto;
   }
 
   .card-commendation {
-    width: 90%;
+    position: relative;
+    margin-top: 20px;
+   
+  }
+
+  #data-container {
+    position: relative;
+    margin-top: -10px;
+     margin-left: 10px;
+     height: fit-content;
+     width: fit-content;
   }
 }
